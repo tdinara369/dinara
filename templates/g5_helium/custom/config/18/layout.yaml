@@ -1,0 +1,158 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1492753493
+layout:
+  /navigation/:
+    -
+      - 'logo-6081 20'
+      - 'menu-9726 64.9'
+      - 'spacer-1934 15'
+  /header/: {  }
+  /intro/: {  }
+  features: {  }
+  utility: {  }
+  /above/:
+    -
+      -
+        -
+          - position-position-4159
+        -
+          - system-content-2168
+  /testimonials/:
+    -
+      - position-position-8416
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: g-flushed
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  features:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  logo-6081:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://horest.png'
+  menu-9726:
+    inherit:
+      outline: '13'
+      include:
+        - attributes
+        - block
+      particle: menu-7323
+  position-position-4159:
+    title: автор
+    attributes:
+      key: module-position
+  system-content-2168:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-content-1587
+  position-position-8416:
+    title: 'About Me'
+    attributes:
+      key: about-me

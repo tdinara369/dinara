@@ -1,0 +1,159 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1480394266
+layout:
+  /top/: {  }
+  /slideshow/: {  }
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /blog/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-4734
+      -
+        'mainbar 50':
+          -
+            - system-content-1587
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  /bottom/: {  }
+  /clients/: {  }
+  /above-footer/: {  }
+  /fixedside/:
+    -
+      - logo-2325
+    -
+      - social-4741
+    -
+      - position-position-8858
+  /footer/:
+    -
+      - 'copyright-1736 33'
+      - 'horizontalmenu-9034 48'
+      - 'totop-8670 19'
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      enabled: 0
+  slideshow:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  blog:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+  clients:
+    type: section
+    attributes:
+      boxed: ''
+  above-footer:
+    type: section
+    attributes:
+      boxed: ''
+  fixedside:
+    type: section
+    attributes:
+      boxed: '0'
+  footer:
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  position-position-4734:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  logo-2325:
+    title: 'Logo / Image'
+    attributes:
+      text: 'Portfolio Template'
+    block:
+      class: g-fixedside-logo
+  position-position-8858:
+    title: 'Module Position'
+    attributes:
+      key: fixedside
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+    attributes:
+      items:
+        -
+          text: JoomLead
+          link: 'https://joomlead.com'
+          name: JoomLead
+        -
+          text: Documentation
+          link: 'https://joomlead.com/documentation/'
+          name: Documentation
+        -
+          text: Download
+          link: 'https://joomlead.com/joomla-template/'
+          name: Download
+  totop-8670:
+    title: 'To Top'

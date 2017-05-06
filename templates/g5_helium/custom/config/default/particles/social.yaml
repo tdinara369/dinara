@@ -1,0 +1,22 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-twitter fa-fw'
+    text: ''
+    link: 'https://twitter.com/likornet'
+    name: Twitter
+  -
+    icon: 'fa fa-facebook fa-fw'
+    text: ''
+    link: 'https://www.facebook.com/dinara.tusupova.9'
+    name: Facebook
+  -
+    icon: 'fa fa-google-plus fa-fw'
+    text: ''
+    link: 'https://plus.google.com/u/0/103515505483922943559'
+    name: Google+

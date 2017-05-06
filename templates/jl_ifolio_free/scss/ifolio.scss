@@ -1,0 +1,147 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+
+@import "dependencies";
+
+//-------------------------------------------
+
+// THEME STYLING
+
+// Base
+@import "nucleus/theme/base";
+
+// Core
+@import "ifolio/styles/core";
+
+// Hyperlinks
+@import "ifolio/styles/hyperlinks";
+
+// Typography
+@import "ifolio/styles/typography";
+
+// Utilities
+@import "ifolio/styles/utilities";
+
+// Variations
+@import "ifolio/styles/variations";
+
+// Buttons
+@import "ifolio/styles/buttons";
+
+// Tables
+@import "ifolio/styles/tables";
+
+// Forms
+@import "ifolio/styles/forms";
+
+// Dropdown Animations
+@import "ifolio/styles/dropdownanimations";
+
+// Demo Styling
+@import "ifolio/styles/ifolio-style";
+
+//-------------------------------------------
+
+// SECTIONS STYLING
+
+// PageSurround
+@import "ifolio/sections/pagesurround";
+
+// slideshow
+@import "ifolio/sections/slideshow";
+
+// top
+@import "ifolio/sections/top";
+
+// Main Nav
+@import "ifolio/sections/mainnav";
+
+// Intro
+@import "ifolio/sections/intro";
+
+// Features
+@import "ifolio/sections/features";
+
+// Utility
+@import "ifolio/sections/utility";
+
+// Above
+@import "ifolio/sections/above";
+
+// Above footer
+@import "ifolio/sections/above-footer";
+
+// Fixed Side
+@import "ifolio/sections/fixedside";
+
+// Clients footer
+@import "ifolio/sections/clients";
+
+
+// Testimonials
+@import "ifolio/sections/testimonials";
+
+// blog
+@import "ifolio/sections/blog";
+
+// Main
+@import "ifolio/sections/main";
+
+// Aside
+@import "ifolio/sections/aside";
+
+// Sidebar
+@import "ifolio/sections/sidebar";
+
+// Bottom
+@import "ifolio/sections/bottom";
+
+// Footer
+@import "ifolio/sections/footer";
+
+// Off Canvas
+@import "ifolio/sections/offcanvas";
+
+//-------------------------------------------
+
+// LAYOUTS STYLING
+
+// Error
+@import "ifolio/layouts/error";
+
+// Offline
+@import "ifolio/layouts/offline";
+
+//-------------------------------------------
+
+// PARTICLES STYLING
+
+// Logo
+@import "ifolio/particles/logo";
+
+// Social
+@import "ifolio/particles/social";
+
+// Content Array
+@import "ifolio/particles/contentarray";
+
+// Content Cubes
+@import "ifolio/particles/contentcubes";
+
+// Content Tabs
+@import "ifolio/particles/contenttabs";
+
+// Owl Carousel
+@import "ifolio/particles/owlcarousel";
+
+// Horizontal Menu
+@import "ifolio/particles/horizontalmenu";
+
+// To Top
+@import "ifolio/particles/totop";
+
+//-------------------------------------------
+
+// BREAKPOINTS
+@import "nucleus/theme/breakpoints/base";
+
+//-------------------------------------------

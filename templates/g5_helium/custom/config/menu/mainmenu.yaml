@@ -1,0 +1,18 @@
+ordering:
+  homepage: {  }
+  krasota:
+    restorany: ''
+  ob-avtore: ''
+items:
+  homepage:
+    id: 101
+    columns:
+      - 100
+  krasota:
+    id: 111
+    columns:
+      - 100
+  krasota/restorany:
+    id: 118
+  ob-avtore:
+    id: 113

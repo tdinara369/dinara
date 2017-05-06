@@ -1,0 +1,12 @@
+#g-clients {
+    background: $clients-background;
+    color: $clients-text-color;
+    padding: $section-padding 0;
+}
+
+@media print {
+    #g-clients {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

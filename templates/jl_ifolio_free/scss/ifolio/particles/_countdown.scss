@@ -1,0 +1,191 @@
+@media only screen and (max-width: 900px) {
+  .flip-clock-wrapper ul li a div div.inn {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      width: 50%;
+      height: 100%;
+      color: #ccc;
+      text-shadow: 0 1px 2px #000;
+      text-align: center;
+      background-color: #333;
+      border-radius: 6px;
+      font-size: 20px !important;
+  }
+  .flip-clock-wrapper ul li {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      height: 50%;
+      line-height: 87px;
+      text-decoration: none !important;
+  }
+
+
+ul.flip {
+    padding-left: 0px !important;
+}
+
+
+.flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: 25px !important;
+    height: 40px !important;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 87px;
+    border-radius: 6px;
+    background: #000;
+}
+.flip-clock-divider .flip-clock-label {
+    position: absolute;
+    top: -1.5em;
+    right: -46px !important;
+    color: black;
+    text-shadow: none;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -49px !important;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -49px !important;
+}
+.flip-clock-dot.top {
+    top: 13px !important;
+}
+.flip-clock-dot.bottom {
+    bottom: 44px !important;
+}
+
+.flip-clock-divider {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 80px !important;
+}
+
+.flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 2px !important;
+    width: 60px;
+    height: 90px;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 87px;
+    border-radius: 6px;
+    background: #000;
+}
+.flip-clock-wrapper ul li {
+    line-height: 43px !important;
+}
+.flip-clock-dot {
+    display: block;
+    background: #323434;
+    width: 7px !important;
+    height: 7px !important;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    left: 6px !important;
+}
+}
+
+
+@media only screen and (max-width: 450px) {
+  .flip-clock-wrapper ul li a div div.inn {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      width: 50%;
+      height: 100%;
+      color: #ccc;
+      text-shadow: 0 1px 2px #000;
+      text-align: center;
+      background-color: #333;
+      border-radius: 6px;
+      font-size: 10px !important;
+  }
+  .flip-clock-wrapper ul li {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      height: 50%;
+      line-height: 87px;
+      text-decoration: none !important;
+  }
+
+.flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: 13px !important;
+    height: 28px !important;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 87px;
+    border-radius: 4px;
+    background: #000;
+}
+.flip-clock-divider .flip-clock-label {
+    position: absolute;
+    top: -1.5em;
+    right: -30px !important;
+    font-size: 10px;
+    color: black;
+    text-shadow: none;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -35px !important;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -35px !important;
+}
+.flip-clock-dot.top {
+    top: 11px !important;
+}
+.flip-clock-dot.bottom {
+    bottom: 56px !important;
+}
+
+.flip-clock-divider {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 16px !important;
+    height: 80px !important;
+}
+
+.flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 1px !important;
+    width: 60px;
+    height: 90px;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 87px;
+    border-radius: 4px !important;
+    background: #000;
+}
+.flip-clock-wrapper ul li {
+    line-height: 30px !important;
+}
+.flip-clock-dot {
+    display: block;
+    background: #323434;
+    width: 4px !important;
+    height: 4px !important;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    left: 6px !important;
+}
+}

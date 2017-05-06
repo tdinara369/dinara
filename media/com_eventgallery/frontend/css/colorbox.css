@@ -1,0 +1,295 @@
+/*
+    eventgallery_Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#eventgallery_colorbox, #eventgallery_cboxOverlay, #eventgallery_cboxWrapper {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+
+#eventgallery_cboxWrapper {
+    max-width: none;
+}
+
+#eventgallery_cboxOverlay {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#eventgallery_cboxMiddleLeft, #eventgallery_cboxBottomLeft {
+    clear: left;
+}
+
+#eventgallery_cboxContent {
+    position: relative;
+}
+
+#eventgallery_cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+#eventgallery_cboxTitle {
+    margin: 0;
+}
+
+#eventgallery_cboxDescription {
+    margin: 0;
+}
+
+#eventgallery_cboxLoadingOverlay, #eventgallery_cboxLoadingGraphic {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#eventgallery_cboxPrevious, #eventgallery_cboxNext, #eventgallery_cboxClose, #eventgallery_cboxSlideshow {
+    cursor: pointer;
+}
+
+.eventgallery_cboxPhoto {
+    -ms-interpolation-mode: bicubic;
+    display: block;
+    float: left;
+    margin: auto;
+    max-width: none;
+}
+
+.eventgallery_cboxIframe {
+    border: 0;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#eventgallery_colorbox, #eventgallery_cboxContent, #eventgallery_cboxLoadedContent {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of eventgallery_Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#eventgallery_cboxOverlay {
+    background: #000;
+}
+
+#eventgallery_colorbox {
+    color: #999;
+    line-height: 1.2em;
+    outline: 0;
+}
+
+#eventgallery_cboxContent {
+    background: transparent;
+    overflow: hidden;
+}
+
+.eventgallery_cboxIframe {
+    background: #fff;
+}
+
+#eventgallery_cboxError {
+    border: 1px solid #ddd;
+    padding: 50px;
+}
+
+#eventgallery_cboxLoadedContent {
+    margin-bottom: 0;
+}
+
+#eventgallery_cboxTitle {
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    box-sizing: border-box; /* Opera/IE 8+ */
+    left: 0;
+    min-height: 24px;
+    padding: 3px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+#eventgallery_cboxTitle > span {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#eventgallery_cboxLoadingOverlay {
+    background: #000 url(../images/loading-black.gif) no-repeat 50% 50%;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#eventgallery_cboxPrevious, #eventgallery_cboxNext, #eventgallery_cboxSlideshow, #eventgallery_cboxClose {
+    background: none;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    width: auto;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#eventgallery_cboxPrevious:active, #eventgallery_cboxNext:active, #eventgallery_cboxSlideshow:active, #eventgallery_cboxClose:active {
+    outline: 0;
+}
+
+
+#eventgallery_cboxPrevious,
+#eventgallery_cboxNext,
+#eventgallery_cboxClose,
+#eventgallery_cboxSlideshow {
+    background: url(../images/controls.png) no-repeat top left;
+}
+
+#eventgallery_cboxSlideshow {
+    background-position: -75px 0;
+    direction: ltr;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 38px;
+    text-indent: -9999px;
+    top: 0;
+    width: 38px;
+}
+
+#eventgallery_cboxSlideshow:hover {
+    background-position: -75px bottom;
+}
+
+
+.eventgallery_cboxSlideshow_on #eventgallery_cboxSlideshow {
+    background-position: -122px 0;
+}
+
+.eventgallery_cboxSlideshow_on #eventgallery_cboxSlideshow:hover {
+    background-position: -122px bottom;
+}
+
+#eventgallery_cboxPrevious {
+    background-position: top left;
+    direction: ltr;
+    height: 65px;
+    left: 0;
+    margin-top: -32px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 28px;
+}
+
+#eventgallery_cboxPrevious:hover {
+    background-position: bottom left;
+}
+
+#eventgallery_cboxNext {
+    background-position: top right;
+    direction: ltr;
+    height: 65px;
+    margin-top: -32px;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 50%;
+    width: 28px;
+}
+
+#eventgallery_cboxNext:hover {
+    background-position: bottom right;
+}
+
+#eventgallery_cboxClose {
+    background-position: -32px 0;
+    direction: ltr;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 38px;
+}
+
+#eventgallery_cboxClose:hover {
+    background-position: -32px bottom;
+}
+
+#eventgallery_colorbox button:active,
+#eventgallery_colorbox button:focus {
+    outline-width: 0;
+}
+
+#eventgallery_colorbox .inline-content {
+    padding: 10px;
+}
+
+#eventgallery_colorbox .eventgallery-add2cart,
+#eventgallery_colorbox .button-cart-connector,
+#eventgallery_colorbox .social-share-button-open {
+    color: #999999;
+    cursor: pointer;
+    padding: 0 10px 10px 0;
+}
+
+#eventgallery_colorbox .eventgallery-add2cart:hover,
+#eventgallery_colorbox .button-cart-connector:hover,
+#eventgallery_colorbox .social-share-button-open:hover {
+    color: #FFFFFF;
+}
+
+#eventgallery_cboxTitle .icons {
+    vertical-align: top;
+}
+
+#eventgallery_cboxTitle .content {
+    padding-left: 10px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#eventgallery_cboxTitle .current {
+    padding-left: 10px;
+    text-align: right;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+#eventgallery_colorbox .img-caption,
+#eventgallery_colorbox .img-exif,
+#eventgallery_colorbox .img-id {
+    display: block;
+    padding: 0;
+}
+
+.social-sharing-toolbox-dark {
+    background-color: rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.social-sharing-toolbox-dark a{
+    color: white;
+}
+
+/**
+* Content Stuff
+*/
+
+#eventgallery_colorbox.content #eventgallery_cboxTitle {
+    display: none !important;
+}

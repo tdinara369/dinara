@@ -1,0 +1,10 @@
+favicon: ''
+touchicon: ''
+css:
+  -
+    location: ''
+    inline: ".g-logo img{\nwidth: 240px;\nheight: 100px;\n}"
+    extra: {  }
+    priority: '0'
+    name: logo
+javascript: {  }

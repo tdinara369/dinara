@@ -1,0 +1,7 @@
+css:
+  -
+    location: ''
+    inline: ".g-menu-item-title {\nfont-size: 25px;\n}\n#g-navigation{\nheight:250px;\n}\n\n\n\n.g-owlcarousel-item-content {\ncolor: white;\nbackground-color: rgba(105,105,105,0.76);\n}\n"
+    extra: {  }
+    priority: '0'
+    name: 'New item'

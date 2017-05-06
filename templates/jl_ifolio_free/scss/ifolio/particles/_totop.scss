@@ -1,0 +1,10 @@
+.g-totop {
+    font-family: get-font-family($font-family-title);
+    font-size: 0.8125rem;
+    font-weight: $font-weight-regular;
+    text-align: right;
+
+    @include breakpoint(mobile-only) {
+        text-align: center;
+    }
+}

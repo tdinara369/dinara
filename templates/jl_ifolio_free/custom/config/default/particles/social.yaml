@@ -1,0 +1,22 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-twitter fa-fw'
+    text: ''
+    link: 'http://www.twitter.com/joomlead'
+    name: Twitter
+  -
+    icon: 'fa fa-facebook fa-fw'
+    text: ''
+    link: 'http://www.facebook.com/joomlead'
+    name: Facebook
+  -
+    icon: 'fa fa-google-plus fa-fw'
+    text: ''
+    link: 'https://plus.google.com/+joomlead'
+    name: Google+

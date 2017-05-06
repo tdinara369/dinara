@@ -1,0 +1,16 @@
+#g-blog {
+    background: $blog-background;
+    color: $blog-text-color;
+    padding: $section-padding;
+
+    @include breakpoint(tablet-range) {
+        padding: 0;
+    }
+}
+
+@media print {
+    #g-blog {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

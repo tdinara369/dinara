@@ -1,0 +1,48 @@
+{% extends ajax-suffix ? "@gantry-admin/partials/ajax.html.twig" : "@gantry-admin/partials/base.html.twig" %}
+
+{% block gantry %}
+    <div class="g-grid overview-header">
+        <div class="g-block">
+            <h2 class="theme-title">
+                {% if gantry.theme.icon %}<i class="fa fa-{{ gantry.theme.icon }}"></i>{% endif %} {{ gantry.theme.title }}
+            </h2>
+            <span class="theme-version">v{{ gantry.theme.version }}</span>
+            <div>By <a href="{{ gantry.theme.author.link }}">{{ gantry.theme.author.name }}</a></div>
+        </div>
+        <div class="g-block">
+            <span class="float-right">
+                <button class="button button-back-to-conf"><i class="fa fa-fw fa-arrow-left"></i> <span>Back to Setup</span></button>
+                <a href="{{ gantry.theme.support.link }}" class="button button-primary"><i class="fa fa-support"></i> <span>Support</span></a>
+                <a href="{{ gantry.theme.documentation.link }}" class="button button-primary"><i class="fa fa-book"></i> <span>Documentation</span></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="g-grid overview-details">
+        <div class="g-block size-35">
+             <img src="{{ url(info.thumbnail) }}" class="preview-image" alt="">
+        </div>
+
+        <div class="g-block">
+            <p>iFolio Pro is a beautiful joomla template made by the JoomLead Team.</p>
+            <ul class="overview-list">
+                <li><i class="fa fa-check"></i>OwlCarousel</li>
+                <li><i class="fa fa-check"></i>Content Cubes</li>
+                <li><i class="fa fa-check"></i>Content Tabs</li>
+                <li><i class="fa fa-check"></i>Animated Counter</li>
+                <li><i class="fa fa-check"></i>Call To Action</li>
+                <li><i class="fa fa-check"></i>Carousel</li>
+                <li><i class="fa fa-check"></i>Cookie Consent</li>
+                <li><i class="fa fa-check"></i>FAQ</li>
+                <li><i class="fa fa-check"></i>Feature box</li>
+                <li><i class="fa fa-check"></i>Heading</li>
+                <li><i class="fa fa-check"></i>Light Gallery</li>
+                <li><i class="fa fa-check"></i>Particle js</li>
+                <li><i class="fa fa-check"></i>Pricing</li>
+                <li><i class="fa fa-check"></i>Tesimonial</li>
+            </ul>
+        </div>
+    </div>
+
+    {% include '@gantry-admin/partials/gantry-details.html.twig' %}
+{% endblock %}

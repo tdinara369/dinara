@@ -1,0 +1,30 @@
+meta:
+  -
+    'og:title': 'Поможем вам с выбором заведений, услуг в городе Алматы'
+  -
+    'og:site_name': HoRest
+  -
+    'twitter:site': '@likornet'
+head_bottom: ''
+atoms:
+  -
+    id: analytics-3601
+    type: analytics
+    title: 'Google Analytics'
+    attributes:
+      enabled: '1'
+      ua:
+        code: UA-97423199-2
+        anonym: '0'
+        ssl: '0'
+        debug: '0'
+  -
+    id: assets-7158
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: '', inline: ".g-menu-item-title {\nfont-size: 25px;\n}\n\n#g-navigation .g-grid{\npadding:0px;\n}\n\n\n\n\n.g-toplevel{\nmargin-top:100px;\n}", extra: {  }, priority: '0', name: 'New item' }
+      javascript:
+        - { location: '', inline: "<script type=\"application/ld+json\">\n{\n\"@context\": \"http://schema.org\",\n\"@type\": \"Blog\",\n\"url\": \"http://www.horest.kz/\"\n}\n</script>\n<script type=\"application/ld+json\">\n{\n\"@context\": \"http://schema.org\",\n\"@type\": \"Organization\",\n\"name\": \"HoRest\",\n\"url\": \"http://www.horest.kz/\",\n\"sameAs\": [\n\"https://www.facebook.com/horest.kz/\",\n\"https://plus.google.com/u/0/103515505483922943559\",\n\"http://twitter.com/likornet\"\n]\n}\n</script>", in_footer: '1', extra: {  }, priority: '0', name: soc }

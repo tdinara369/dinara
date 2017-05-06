@@ -1,0 +1,13 @@
+css:
+  -
+    location: ''
+    inline: ".g-menu-item-title {\nfont-size: 15px;\n}\n\n#g-intro{\npadding-top:0px;\n}\n.g-block{\npadding-top:0px;\n}\n\n"
+    extra: {  }
+    priority: '0'
+    name: 'New item'
+  -
+    location: ''
+    inline: "#g-header{\nheight: 290px;\n}"
+    extra: {  }
+    priority: '0'
+    name: header

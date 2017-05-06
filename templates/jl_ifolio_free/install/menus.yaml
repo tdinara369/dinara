@@ -1,0 +1,9 @@
+ifolio-theme:
+  title: 'iFolio Theme'
+  description: 'Sample menu for iFolio theme.'
+
+  items:
+    ifolio:
+      title: 'Home'
+      outline: default
+      home: 1

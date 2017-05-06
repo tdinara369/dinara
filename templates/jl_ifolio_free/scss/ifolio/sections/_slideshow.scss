@@ -1,0 +1,115 @@
+#g-slideshow {
+	background: $slideshow-background;
+	color: $slideshow-text-color;
+    padding: $section-padding 0;
+    position: relative;
+    z-index: 10;
+
+    @if $slideshow-background-image {
+        background: url($slideshow-background-image) center center no-repeat;
+        background-size: cover;
+
+        @if $slideshow-background-overlay == 'enabled' {
+            &:before {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: "";
+                z-index: -1;
+                opacity: 0.85;
+								background: rgba(0,0,0,.6);
+            }
+        }
+    }
+
+    a {
+        color: fadeout($slideshow-text-color, 40%);
+
+        &:hover {
+            color: fadeout($slideshow-text-color, 20%);
+        }
+    }
+
+    h2 {
+        font-weight: 300;
+        line-height: $core-line-height;
+
+        @include breakpoint(large-mobile-range) {
+            font-size: 1.35rem;
+        }
+
+        em {
+            font-weight: $font-weight-medium;
+        }
+
+        &.large-heading {
+            font-size: $h2-font-size * 2;
+
+            @include breakpoint(tablet-range) {
+                font-size: $h2-font-size * 1.25;
+            }
+
+            @include breakpoint(mobile-only) {
+                font-size: $h2-font-size;
+            }
+        }
+    }
+		//Slideshow controls
+.tp-leftarrow.default {
+    background: url(../images/navi.png) no-repeat 0 0;
+    background-position: -89px -26px;
+    height: 40px;
+    cursor: pointer;
+    top: 50%;
+    left: 30px;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 110;
+}
+.tp-rightarrow.default {
+    width: 30px;
+    background: url(../images/navi.png);
+    background-position: -89px -103px;
+    height: 40px;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 110;
+}
+.tp-leftarrow:hover,
+.tp-rightarrow:hover {} .tp-bullets.simplebullets.round .bullet:hover,
+.tp-bullets.simplebullets.round .bullet.selected,
+.tp-bullets.simplebullets.navbar .bullet:hover,
+.tp-bullets.simplebullets.navbar .bullet.selected {
+    background-position: -34px -84px;
+}
+.tp-bullets.simplebullets.round .bullet {
+    background: url(../images/navi.png) no-repeat top left;
+    background-position: -34px -117px;
+}
+.tp-dottedoverlay {
+    content: "";
+    position: absolute;
+    background-color: rgba(68, 68, 68, 0.6) !important;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tp-dottedoverlay.twoxtwo {
+   background: none;
+}
+}
+
+@media print {
+	#g-slideshow {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

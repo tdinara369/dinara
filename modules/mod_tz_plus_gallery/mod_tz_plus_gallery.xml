@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_tz_plus_gallery</name>
+    <author>TuanNATemplaza</author>
+    <creationDate>November 10th 2014</creationDate>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com</authorUrl>
+	<version>1.1</version>
+    <description>MOD_TZ_PLUS_GALLERY_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tz_plus_gallery">mod_tz_plus_gallery.php</filename>
+		<filename>helper.php</filename>
+        <folder>admin</folder>
+        <folder>languages</folder>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_tz_plus_gallery.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_tz_plus_gallery.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic"
+                      addfieldpath="/modules/mod_tz_plus_gallery/admin/formfields">
+
+                <field name="tztype" type="radio" class="btn-group" label="MOD_TZ_PLUS_GALLERY_TYPE_ALBUM_LABEL"
+                       default="fb">
+                    <option value="fb">JFACEBOOK</option>
+                    <option value="flick">JFLICKR</option>
+                    <option value="instagram">JINSTAGRAM</option>
+                    <option value="gplus">JGOOGLE</option>
+                </field>
+                <field name="album_title" label="MOD_TZ_PLUS_GALLERY_TITLE_ALBUM_LABEL" type="text"/>
+                <field name="album_desc" label="MOD_TZ_PLUS_GALLERY_ALBUM_DESCRIPTION_LABEL" type="textarea"
+                       filter="raw"/>
+
+                <field name="tz_show_title_album" type="radio" default="0" class="btn-group"
+                       label="MOD_TZ_PLUS_GALLERY_SHOW_TITLE_ALBUM_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="tz_show_desc_album" type="radio" default="0" class="btn-group"
+                       label="MOD_TZ_PLUS_GALLERY_SHOW_DESCRIPTION_ALBUM_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="tz_use_load_more" type="radio" default="0" class="btn-group"
+                       label="MOD_TZ_PLUS_GALLERY_USE_LOAD_MORE_LABEL"
+                       description="MOD_TZ_PLUS_GALLERY_USE_LOAD_MORE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="tz_columns" type="text" default="5" label="MOD_TZ_PLUS_GALLERY_COLUMNS_LABEL"/>
+                <field name="tz_padding" type="text" default="0" label="MOD_TZ_PLUS_GALLERY_PADDING_LABEL"/>
+                <!--<field name="tz_height_item" type="number" default="300" label="MOD_TZ_PLUS_GALLERY_HEIGHT_ITEM_LABEL"/>-->
+                <field name="tz_color_box" type="tzcolor" label="MOD_TZ_PLUS_GALLERY_COLOR_BOX_LABEL"
+                       default="rgb(56, 190, 234)"/>
+            </fieldset>
+            <fieldset name="facebook">
+                <field name="fb_id" label="MOD_TZ_PLUS_GALLERY_ID_FACEBOOK_LABEL" type="text"/>
+                <field name="fb_type_album" type="tzplusgalleryList" default="single"
+                       label="MOD_TZ_PLUS_GALLERY_MULTI_SINGLE_ALBUM_LABEL">
+                    <option value="multi">JMULTI</option>
+                    <option value="single">JSINGLE</option>
+                    <option value="all">JALL</option>
+                </field>
+
+                <field name="fb_album_id" label="MOD_TZ_PLUS_GALLERY_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_type_fb_type_album  single  "/>
+                <field name="fb_in_album_id" label="MOD_TZ_PLUS_GALLERY_IN_ALBUM_ID_LABEL" type="text"
+                       class="fb_tz_type tz_hidden tz_type_fb_type_album multi "/>
+                <field name="fb_ex_album_id" label="MOD_TZ_PLUS_GALLERY_EX_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_fb_type_album multi "/>
+
+                <field name="fb_photo_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_PHOTO_LABEL" type="text"
+                       class="tz_type tz_type_fb_type_album  single"/>
+                <field name="fb_album_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_ALBUM_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_fb_type_album multi"/>
+            </fieldset>
+
+            <fieldset name="flickr">
+                <field name="flickr_id" label="MOD_TZ_PLUS_GALLERY_ID_FLICKR_LABEL" type="text"/>
+                <field name="flickr_api_key"
+                       label="MOD_TZ_PLUS_GALLERY_API_KEY_FLICKR_LABEL"
+                       type="text"/>
+                <field name="fk_type_album" type="tzplusgalleryList" default="single"
+                       label="MOD_TZ_PLUS_GALLERY_MULTI_SINGLE_ALBUM_LABEL">
+                    <option value="multi">JMULTI</option>
+                    <option value="single">JSINGLE</option>
+                    <option value="all">JALL</option>
+                </field>
+
+                <field name="fk_album_id" label="MOD_TZ_PLUS_GALLERY_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_type_fk_type_album  single  "/>
+                <field name="fk_in_album_id" label="MOD_TZ_PLUS_GALLERY_IN_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_fk_type_album multi "/>
+                <field name="fk_ex_album_id" label="MOD_TZ_PLUS_GALLERY_EX_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_fk_type_album multi "/>
+
+                <field name="fk_photo_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_PHOTO_LABEL" type="text"
+                       class="tz_type tz_type_fk_type_album  single"/>
+                <field name="fk_album_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_ALBUM_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_fk_type_album multi"/>
+            </fieldset>
+
+            <fieldset name="instagram">
+                <field name="instagram_id" label="MOD_TZ_PLUS_GALLERY_ID_INSTAGRAM_LABEL" type="text"/>
+                <field name="instagram_data_access_token"
+                       label="MOD_TZ_PLUS_GALLERY_DATA_TOKEN_INSTAGRAM_LABEL"
+                       type="text"/>
+                <field name="it_photo_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_PHOTO_LABEL" type="text"/>
+            </fieldset>
+
+            <fieldset name="googleplus">
+                <field name="gplus_id" label="MOD_TZ_PLUS_GALLERY_ID_GOOGLE_PLUS_LABEL" type="text"/>
+                <field name="gl_type_album" type="tzplusgalleryList" default="single"
+                       label="MOD_TZ_PLUS_GALLERY_MULTI_SINGLE_ALBUM_LABEL">
+                    <option value="multi">JMULTI</option>
+                    <option value="single">JSINGLE</option>
+                    <option value="all">JALL</option>
+                </field>
+
+                <field name="gl_album_id" label="MOD_TZ_PLUS_GALLERY_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_type_gl_type_album  single  "/>
+                <field name="gl_in_album_id" label="MOD_TZ_PLUS_GALLERY_IN_ALBUM_ID_LABEL" type="text"
+                       class="fb_tz_type tz_hidden tz_type_gl_type_album multi "/>
+                <field name="gl_ex_album_id" label="MOD_TZ_PLUS_GALLERY_EX_ALBUM_ID_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_gl_type_album multi "/>
+
+                <field name="gl_photo_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_PHOTO_LABEL" type="text"
+                       class="tz_type tz_type_gl_type_album  single"/>
+                <field name="gl_album_limit" label="MOD_TZ_PLUS_GALLERY_LIMIT_ALBUM_LABEL" type="text"
+                       class="tz_type tz_hidden tz_type_gl_type_album multi"/>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout"
+                       type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+
+                <field name="moduleclass_sfx"
+                       type="textarea"
+                       rows="3"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+                <field name="cache"
+                       type="list"
+                       default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL"
+                       description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time"
+                       type="text"
+                       default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode"
+                       type="hidden"
+                       default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+	
+    <updateservers>
+        <server type="extension" priority="1" name="TZ Plus Gallery Module"><![CDATA[http://joomla.templaza.net/extensions/updates/modules/mod_tz_plus_gallery_update.xml]]></server>
+    </updateservers>
+</extension>

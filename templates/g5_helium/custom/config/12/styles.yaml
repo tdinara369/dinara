@@ -1,0 +1,28 @@
+preset: preset4
+base:
+  background: ''
+  text-color: '#2a363b'
+link:
+  regular: '#e84a5f'
+  hover: '#2a363b'
+navigation:
+  background: ''
+  text-color: '#8c1212'
+header:
+  background: ''
+  background-image: 'gantry-media://review-min.jpg'
+  background-overlay: disabled
+intro:
+  text-color: '#2a363b'
+features:
+  text-color: '#2a363b'
+above:
+  text-color: '#2a363b'
+expanded:
+  text-color: '#2a363b'
+footer:
+  background: '#9c009c'
+  text-color: '#ffffff'
+offcanvas:
+  background: ''
+  toggle-color: '#e84a5f'

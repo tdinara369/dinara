@@ -1,0 +1,16 @@
+#g-bottom {
+    background: $bottom-background;
+    color: $bottom-text-color;
+    padding: $section-padding 0;
+
+    .g-content {
+        margin: $content-margin 0;
+    }
+}
+
+@media print {
+    #g-bottom {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

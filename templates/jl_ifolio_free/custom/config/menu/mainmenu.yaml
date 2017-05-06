@@ -1,0 +1,8 @@
+ordering:
+  homepage: {  }
+items:
+  homepage:
+    id: 101
+    enabled: true
+    columns:
+      - 100

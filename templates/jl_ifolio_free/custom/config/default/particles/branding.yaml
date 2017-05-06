@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Powered by <a href="https://www.joomlead.com/" title="JoomLead" class="g-powered-by">JoomLead<span class="hidden-tablet"> </span></a>'
+css:
+  class: g-branding

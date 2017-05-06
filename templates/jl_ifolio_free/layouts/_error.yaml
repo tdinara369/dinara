@@ -1,0 +1,171 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1480477094
+layout:
+  top: {  }
+  slideshow: {  }
+  intro: {  }
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  blog: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
+  bottom: {  }
+  clients: {  }
+  above-footer: {  }
+  fixedside: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  slideshow:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  features:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  blog:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  clients:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  fixedside:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
